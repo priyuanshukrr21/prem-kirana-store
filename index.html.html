@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prem Kirana Store | Premium Grocery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f9fafc;
+color:#333;
+}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#8B0000,#ff0000);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+font-weight:800;
+}
+
+header p{
+margin-top:10px;
+font-size:16px;
+}
+
+/* NAV */
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:600;
+}
+
+nav a:hover{
+color:#ffcc00;
+}
+
+/* SECTION */
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.card{
+background:white;
+padding:30px;
+margin:auto;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#ff0000;
+color:white;
+border-radius:30px;
+text-decoration:none;
+margin-top:15px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#8B0000;
+}
+
+/* FORM */
+form input, form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+form button{
+padding:12px;
+width:100%;
+border:none;
+background:#8B0000;
+color:white;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+}
+
+form button:hover{
+background:#ff0000;
+}
+
+/* PAYMENT BOX */
+.payment-box{
+background:#fff5f5;
+padding:25px;
+border-radius:15px;
+border:1px solid #ffcccc;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+header h1{
+font-size:28px;
+}
+nav a{
+display:block;
+margin:10px 0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🛒 Prem Kirana Store</h1>
+<p>📍 Bazaar Samiti Ke Nikat, Pupri, Sitamarhi</p>
+<p>📞 7079333735 | 9608387329</p>
+<p>🥬 Thok & Khudra Vikreta | Premium Grocery</p>
+<a href="#order" class="btn">🛍️ Order Now</a>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#order">Order</a>
+<a href="#payment">Payment</a>
+<a href="#location">Location</a>
+</nav>
+
+<section class="section" id="about">
+<div class="card">
+<h2>🏪 About Us</h2>
+<p>Hamare yahan chawal, aata, dal, tel, masale, dry fruits, sugar, sabhi grocery saman uplabdh hai. Quality aur sahi daam hamari pehchan hai.</p>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="card">
+<h2>🛍️ Available Products</h2>
+<p>🌾 Chawal | Aata | Dal</p>
+<p>🧂 Masale | Tel | Sugar</p>
+<p>🥔 Aalu | Pyaj | Daily Needs</p>
+<p>🍫 Snacks | Dry Fruits</p>
+</div>
+</section>
+
+<section class="section" id="order">
+<div class="card">
+<h2>📝 Online Order Registration</h2>
+
+<form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+<input type="text" name="Name" placeholder="👤 Your Name" required>
+<input type="tel" name="Phone" placeholder="📞 Mobile Number" required>
+<textarea name="Order Details" placeholder="🛒 Enter your order details..." required></textarea>
+<button type="submit">✅ Submit Order</button>
+</form>
+
+<br>
+
+<a class="btn" href="https://wa.me/917079333735?text=Hello%20Prem%20Kirana%20Store%20I%20want%20to%20order">💬 Order on WhatsApp</a>
+
+</div>
+</section>
+
+<section class="section" id="payment">
+<div class="card payment-box">
+<h2>💳 Online Payment Option</h2>
+
+<p><strong>📱 UPI Number:</strong> 9608387329</p>
+<p><strong>🏦 UPI ID:</strong> upiid@upi</p>
+
+<br>
+
+<h3>📷 Scan & Pay</h3>
+<img src="YOUR_QR_IMAGE_LINK" width="200" alt="QR Code">
+
+<p>Payment karne ke baad WhatsApp par screenshot bhej dein ✅</p>
+
+</div>
+</section>
+
+<section class="section" id="location">
+<div class="card">
+<h2>📍 Live Location</h2>
+<iframe 
+src="https://www.google.com/maps?q=Bazar%20Samiti%20Pupri%20Sitamarhi&output=embed"
+width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+</iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Prem Kirana Store | Designed with ❤️</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917079333735" target="_blank">💬</a>
+
+</body>
+</html>
